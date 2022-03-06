@@ -102,10 +102,10 @@ impl Rectangle {
 }
 
 fn main() {
-    let rect: Rectangle = Rectangle {
+    let rect: Rectangle = dbg!(Rectangle {
         height: 50,
         width: 30
-    };
+    });
 
     let rect1: Rectangle = Rectangle {
         height: 40,
@@ -133,5 +133,5 @@ fn main() {
         rect.area(),
         rect1.area(),
         rect2.area()
-    )
+    );
 }
