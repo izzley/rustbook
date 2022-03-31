@@ -88,15 +88,31 @@
 //     }
 // }
 
-fn main() {
-    let some_value: Option<i32> = Some(3);
+// pub mod dice_roll;
+
+// fn main() {
+//     let some_value: Option<i32> = Some(3);
     
-    match some_value {
-        Some(3) => println!("three"),
+//     match some_value {
+//         Some(3) => println!("three"),
+//         _ => (),
+//     }
+    
+//     if let Some(3) = some_value {
+//         println!("three");
+//     }
+// }
+
+// ################
+fn main() {
+    let dice_roll = 9;
+    match dice_roll {
+        3 => add_fancy_hat(),
+        7 => remove_fancy_hat(),
         _ => (),
     }
-    
-    if let Some(3) = some_value {
-        println!("three");
-    }
 }
+
+fn add_fancy_hat() {}
+fn remove_fancy_hat() {}
+fn reroll() {}
